@@ -1,0 +1,29 @@
+<script>
+  var x = document.getElementsByTagName('title')[0];
+  var y = document.getElementsByClassName('cs-font-color-4 csFormatType_Money');
+  var z = document.querySelector('meta[name="description"]').content;
+  var a = document.querySelector('meta[property="og:image"]').content;
+  var b = document.querySelector('meta[property="og:url"]').content;
+
+  var obj = {
+    '@context': "https://schema.org/",
+    '@type': "Product",
+     'name': x.innerHTML,
+     'description' : z,
+    'image' : a,
+    'brand': "Tryumf",
+    'offers': {
+      '@type': "Offer",
+      'url': b,
+      'priceCurrency': "PLN",
+      'price': y,
+      'itemCondition': "https://schema.org/NewCondition"
+    }
+};
+  var myJSON = JSON.stringify(obj);
+  var script = document.createElement('script');
+  script.type = "application/ld+json";
+  script.text = JSON.stringify(obj);
+  document.querySelector('body').appendChild(script);
+
+</script>
