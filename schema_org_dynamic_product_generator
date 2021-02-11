@@ -1,4 +1,4 @@
-<script>
+  <script>
   var x = document.getElementsByTagName('title')[0];
   var y = document.getElementsByClassName('cs-font-color-4 csFormatType_Money');
   var z = document.querySelector('meta[name="description"]').content;
@@ -10,13 +10,13 @@
     '@type': "Product",
      'name': x.innerHTML,
      'description' : z,
-    'image' : a,
+    'image' : "",
     'brand': "Tryumf",
     'offers': {
       '@type': "Offer",
-      'url': b,
+      'url': "",
       'priceCurrency': "PLN",
-      'price': y,
+      'price': y[0].innerHTML,
       'itemCondition': "https://schema.org/NewCondition"
     }
 };
