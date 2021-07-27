@@ -57,3 +57,4 @@
   }
   //wiadomość o wysłaniu wiadomości
  echo "ok";
+
